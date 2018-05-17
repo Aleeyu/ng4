@@ -1,6 +1,7 @@
 import {NgModule} from "@angular/core";
 import {Routes, RouterModule} from "@angular/router";
 import {environment} from "../environments/environment";
+import {SwiperComponent } from './swiper/swiper.component'
 const routes: Routes = [
   {
     path:'home',
@@ -9,8 +10,11 @@ const routes: Routes = [
   {
     path:'product',
     loadChildren:'app/product/product.module#ProductModule'
+  },
+  {
+    path:'s',
+    component:SwiperComponent
   }
-
 ];
 
 @NgModule({

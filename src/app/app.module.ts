@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 
 // 设置为hash模式
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { SwiperComponent } from './swiper/swiper.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SwiperComponent
   ],
   imports: [
     BrowserModule,
